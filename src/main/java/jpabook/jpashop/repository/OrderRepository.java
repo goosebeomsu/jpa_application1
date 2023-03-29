@@ -41,7 +41,7 @@ public class OrderRepository {
             if (isFirstCondition) {
                 jpql += " where";
                 isFirstCondition = false;
-            } else
+            } else {
                 jpql += " and";
             }
             jpql += " o.status = :status";
